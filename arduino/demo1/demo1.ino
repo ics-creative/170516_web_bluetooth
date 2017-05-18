@@ -4,11 +4,10 @@
 #define CHARACTERISTIC_UUID "19B10001-E8F2-537E-4F6C-D104768A1214"
 
 // サービス : LEDを扱う機能
-// BLE LED Service
 BLEService ledService(SERVICE_UUID);
 
 // キャラクタリスティック : LEDスイッチ
-// セントラル(スマホ)から読み書き許可
+// スマートフォンから読み書き許可
 BLEUnsignedCharCharacteristic switchCharacteristic(CHARACTERISTIC_UUID, BLERead | BLEWrite);
 
 // LEDを接続しているデジタルピン
