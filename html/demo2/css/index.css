@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #fafafa;
+}
+
+img {
+	vertical-align: top;
+}
+
+body > div {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.view-inner {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.show {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+#main-view {
+	width: 100%;
+	text-align: center;
+}
+
+#main-view .view-inner > div {
+	padding: 20px;
+}
+
+#main-view p {
+	margin: 0;
+	line-height: 1;
+}
+
+#main-view .humidity {
+	border-bottom: solid 1px #ddd;
+	color: #2c82c9
+}
+
+#main-view .temperature {
+	color: #e26a6a
+}
+
+#main-view .h-text {
+	margin: 0 0 5px;
+	font-size: 1.5em;
+}
+
+#main-view .text-set .value-text {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 8em;
+	line-height: 0.9em
+}
+
+#main-view .text-set .unit {
+	margin: 0;
+	font-size: 2em
+}
+
+#loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+}

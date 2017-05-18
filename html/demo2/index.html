@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<title>Web Bluetooth API & Genuino 101 & humidity / temperature Sensor DEMO</title>
+
+	<link rel="stylesheet" href="../assets/css/flat-ui.min.css" />
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="css/index.css" />
+
+	<script src="js/app.js"></script>
+</head>
+<body>
+
+<div id="ble-connect-button" class="show">
+	<div class="view-inner">
+		<div class="btn btn-block btn-lg btn-primary">CONNECT</div>
+	</div>
+</div>
+
+<div id="main-view" class="hide">
+	<div class="view-inner">
+		<div class="humidity">
+			<p class="h-text">湿度</p>
+
+			<div class="text-set">
+				<p id="humidity-text" class="value-text">-</p>
+				<p class="unit">％</p>
+			</div>
+		</div>
+
+		<div class="temperature">
+			<p class="h-text">温度</p>
+
+			<div class="text-set">
+				<p id="temperature-text" class="value-text">-</p>
+				<p class="unit">度</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="loading" class="hide">
+	<img src="../assets/images/loading.svg" width="50" height="50">
+</div>
+
+</body>
+</html>
