@@ -26,11 +26,9 @@ void setup() {
   // BLE初期化
   BLE.begin();
 
-  // set advertised local name and service UUID:
+  // デバイス名とサービスのUUIDを設定
   // デバイス名を設定
   BLE.setLocalName("LED");
-
-  // LEDを扱う機能をサービスとして設定
   BLE.setAdvertisedService(ledService);
 
   // LEDを操作する機能をサービスへ追加

@@ -40,10 +40,8 @@ void setup() {
   // BLE初期化
   BLE.begin();
 
-  // デバイス名を設定
+  // デバイス名とサービスのUUIDを設定
   BLE.setLocalName("SENSOR");
-
-  // センサーを扱う機能をサービスとして設定
   BLE.setAdvertisedService(sensorService);
 
   // 湿度を扱うキャラクタリスティックをサービスへ追加
