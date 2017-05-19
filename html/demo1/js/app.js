@@ -129,7 +129,7 @@ function showLEDButton() {
 function initLED() {
   // キャラクタリスティックから値を読み込む
   ledCharacteristic.readValue()
-    .then((value) => {
+    .then(value => {
       console.log("LEDの点灯状態を読み込みました。");
 
       // 0番目のデータを取得
